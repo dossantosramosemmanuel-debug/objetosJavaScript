@@ -14,24 +14,25 @@
         relacionadas. Eles podem ser criados usando a sintaxe de objeto literal, a função 
         construtora ou a classe<p>
 
-            <p>Exemplo de objeto literal</p>
-            <pre><code>const pessoa = {
-            nome: "João",
-            idade: 30,
-            saudacao: function() { 
-                console.log("Olá, meu nome é " + This.nome);
-            }
+            <p>Exemplo de objeto com 1 elemento e 5 atributos</p>
+            <pre><code>const produto = {
+            nome: "Caneta",
+            cor: "Azul",
+            preco: 2.50,
+            estoque: 15,
+            categoria: "Papelaria"
             };</code></pre>
 
             <script>
-                const pessoa = {
-                    nome: "João",
-                    idade: 30,
-                    saudacao: function() {
-                        console.log("Olá, meu nome é " + this.nome);
-                    }
+                const produto = {
+                    nome: "Caneta",
+                    cor: "Azul",
+                    preco: 2.50,
+                    estoque: 15,
+                    categoria: "Papelaria"
                 };
-                pessoa.saudacao(); //Chama o método saudacao do objeto pessoa
+
+                console.log(produto);
             </script>
     
 </body>
